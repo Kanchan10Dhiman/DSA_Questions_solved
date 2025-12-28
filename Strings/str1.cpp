@@ -26,13 +26,12 @@ int main(){
     cout<<s1.size()<<endl;
     cout<<s1.length()<<endl;
     //empty check 
-    cout<< s1.empty()<<endl;
+    cout<< s1.empty()<<endl;//1=true 0=false
     string s3;
     cout<< s3.empty();
 
     //compare
-    // int st= s1.compare(s2); --> If 'i' > 'e' (ASCII 105 > 101), then compare() gives positive number (like 4).
-
+    // int st= s1.compare(s2); --> If 'i' > 'e' (ASCII 105 > 101), then compare() gives positive number (like 4) otherwise negative.
 
     // cout<<st<<endl;
     cout<<(s1==s2)<<endl;
@@ -41,15 +40,16 @@ int main(){
     //substring-->
     string s7="kanchan";
     cout<<s7.substr(1,4)<<endl;
+
     //find 
     cout<<s7.find("nc")<<endl;//at 2 index
     cout<<s7.find("q")<<endl; //garbage value
     s7.clear();
-    cout<<s7<<endl; //tring has clear
+    cout<<s7<<endl; //string has clear
     cout<<s7.empty(); //1 i.e true
     cout<<endl;
-    //loops
 
+    //loops
     string s="kanchudhiman";
     for(int i=0;i<s.length();i++){
         cout<<s[i]<<" ";
