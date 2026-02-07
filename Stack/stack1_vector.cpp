@@ -28,10 +28,12 @@ int main(){
     s.push(20);
     s.push(30);
 
+//ye sirf smjhne k liy h originially hum stack ko empty nhi krte 
     while(!s.empty()){
-        cout<<s.top()<<" ";
+        cout<<s.top()<<" ";  
         s.pop();
     }cout<<endl;
     return 0;
 
 }
+
